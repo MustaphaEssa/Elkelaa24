@@ -1,0 +1,30 @@
+<ion-side-menus>
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-stable has-logo">
+      Elkelaa24App
+    </header>
+    <ion-content class="foods-wrap has-header">
+      
+      <ion-list>
+        <ion-item nav-clear><strong>الأقسام</strong></ion-item>
+        <ion-item nav-clear menu-close href="#/kelaa/categories">جميع الأخبار</ion-item> 
+        <ion-item nav-clear menu-close ng-repeat="category in categories" href="#/kelaa/categories/{{category.id}}"> {{category.name}} </ion-item> 
+  
+        <ion-item nav-clear><strong>الخدمات</strong></ion-item>
+        <ion-item nav-clear menu-close href="#/kelaa/pagesalat"><i class="icon ion-calendar"></i>مواقيت الصلاة</ion-item>
+     
+        <ion-item nav-clear><strong>الإعدادات</strong></ion-item>
+        <ion-item nav-clear menu-close href="#/kelaa/contact"><i class="icon ion-email"></i>اتصل بنا </ion-item>
+        <ion-item nav-clear menu-close href="https://www.facebook.com/elkelaa24"><i class="icon ion-social-facebook"></i>صفحة الفيس بوك</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

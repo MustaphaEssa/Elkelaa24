@@ -1,0 +1,19 @@
+<div class="modal small">
+	<ion-header-bar>
+		<h1 class="title">القلعة24</h1>
+		<div class="buttons">
+		  <button class="button button-clear" ng-click="searchClose()"><i class="icon ion-close-round"></i></button>
+		</div>
+	</ion-header-bar>
+  	<ion-content class="eatz-small-modal">
+		<form ng-controller="SearchFromCtrl" ng-submit="doSearch()">
+			<div class="list list-inset">
+			  <label class="item item-input">
+			    <i class="icon ion-search placeholder-icon"></i>
+			    <input id="searchinput" ng-model="searcheats.query" type="text" placeholder="بحث" focus-me="true"> 
+			    <button ng-click="doSearch()">بحث</button>
+			</div>		
+		</form>
+	</ion-content>
+</div>
+
